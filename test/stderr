@@ -1,7 +1,0 @@
-/usr/local/lib/python3.8/site-packages/scanpy/api/__init__.py:3: FutureWarning: 
-
-In a future version of Scanpy, `scanpy.api` will be removed.
-Simply use `import scanpy as sc` and `import scanpy.external as sce` instead.
-
-  warnings.warn(
-0it [00:00, ?it/s]0it [00:00, ?it/s]
