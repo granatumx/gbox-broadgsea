@@ -51,6 +51,23 @@ frontend:
       max: 1000000
       default: 1000
       injectInto: n_repeats
+    - type: select
+      label: Filter data
+      choices:
+        - label: Do not filter or alter scoring
+          value: unaltered
+          description: >
+            Do not alter the scoring
+        - label: Only take positively scored genes
+          value: pos
+          description: >
+            If genes have a positive score (for example log FC or Z score), they are expressed more in the cluster.
+        - label: Only take negatively scored genes, and rank lower scores higher
+          value: neg
+          description: >
+            If genes have a negative score, they are expressed less in the cluster.
+      default: unaltered
+      injectInto: alterChoice
   imports:
     - kind: geneMeta
       label: A list of genes with their scores (usually output from scanpy scoring for example)

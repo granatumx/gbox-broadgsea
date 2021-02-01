@@ -11,6 +11,13 @@ def main():
     species = gn.get_arg("species")
     gset_group_id = gn.get_arg("gset_group_id")
     n_repeats = gn.get_arg("n_repeats")
+    alterChoice = gn.get_arg("alterChoice")
+
+    if alterChoice=="pos":
+        gene_scores = dict(filter(lambda elem: elem[1] >= 0.0, gene_scores.items()))
+    elif alterChoice=="neg":
+        gene_scores = dict(filter(lambda elem: elem[1] < 0.0, gene_scores.items()))
+        gene_scores = { k: abs(v) for k, v in gene_scores.items() }
 
     gene_ids = gene_scores.keys()
     gene_scores = gene_scores.values()
