@@ -40,7 +40,8 @@ def main():
         result_df = result_df[["gset_name", "gset_size", "nes", "p_val", "fdr"]]
         gn.add_pandas_df(result_df)
         gn.export(result_df.to_csv(index=False), 'gsea_results.csv', kind='raw', meta=None, raw=True)
-        gn.export(dict(zip(list(result_df.index.values), result_df.nes.tolist())), 'nes', kind='geneMeta')
+        newdict = dict(zip(result_df.index.tolist(), result_df['nes'].tolist()))
+        gn.export(newdict, 'nes', kind='geneMeta')
 
     gn.commit()
 
