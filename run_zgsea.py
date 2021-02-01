@@ -13,7 +13,7 @@ def main():
     n_repeats = gn.get_arg("n_repeats")
 
     gene_ids = gene_scores.keys()
-    gene_scores = [ -x for x in gene_scores.values()]
+    gene_scores = gene_scores.values()
 
     gene_id_type = guess_gene_id_type(list(gene_ids)[:5])
     if gene_id_type != 'symbol':
