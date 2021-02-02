@@ -43,7 +43,7 @@ frontend:
             Kyoto Encyclopedia of Genes and Genomes (KEGG) is a collection of
             databases dealing with genomes, biological pathways, diseases,
             drugs, and chemical substances. (From wikipedia)
-      default: kegg
+      default: go
       injectInto: gset_group_id
     - type: number
       label: Number of repeats for calculating p-values
