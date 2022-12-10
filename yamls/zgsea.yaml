@@ -5,7 +5,10 @@ meta:
   subtitle: The canonical Gene Set Enrichment Analysis
   description: |
     Gene Set Enrichment Analysis (GSEA) helps identify the biological
-    functions related to a list of genes.
+    functions related to a list of genes. You must register your email address
+    to use the data provided. You also agree to all terms and conditions
+    provided by the Broad Institute in using the GSEA data. You should
+    cite the relevant work if using the material for publication.
 
     [http://software.broadinstitute.org/gsea/index.jsp](http://software.broadinstitute.org/gsea/index.jsp)
 
