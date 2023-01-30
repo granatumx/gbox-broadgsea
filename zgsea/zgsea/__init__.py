@@ -40,7 +40,7 @@ def parse_gmt(gmt_str):
 
 gset_group_id_to_filename = {
     "kegg": "c2.cp.kegg.v2022.1.Hs.symbols.gmt",
-    "go": "c5.go.v2022.Hs.symbols.gmt",
+    "go": "c5.go.v2022.1.Hs.symbols.gmt",
     "hallmark": "h.all.v2022.1.Hs.symbols.gmt",
     "C1": "c1.all.v2022.1.Hs.symbols.gmt",
     "C2": "c2.all.v2022.1.Hs.symbols.gmt",
