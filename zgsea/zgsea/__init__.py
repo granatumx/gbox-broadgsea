@@ -50,6 +50,7 @@ gset_group_id_to_filename = {
     "C6": "c6.all.v2022.1.Hs.symbols.gmt",
     "C7": "c7.all.v2022.1.Hs.symbols.gmt",
     "C8": "c8.all.v2022.1.Hs.symbols.gmt",
+    "WP": "c2.cp.wikipathways.v2022.1.Hs.symbols.gmt",
 }
 
 

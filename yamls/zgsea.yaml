@@ -106,6 +106,10 @@ frontend:
           description: >
             Gene sets that contain curated cluster markers for cell types identified 
             in single-cell sequencing studies of human tissue. (From gsea-msigdb.org, accessed 12/10/2022)
+        - label: GSEA Wikipathways
+          value: WP
+          description: >
+            Gene sets from wikipathways (From gsea-msigdb.org, accessed 12/10/2022)
       default: go
       injectInto: gset_group_id
     - type: number
